@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .father {
+            display: grid;
+            grid-gap: 2px;
+            /* grid-template-columns: minmax(200px, 2fr) repeat(3, 1fr); */
+            /* grid-template-columns: max-content repeat(3, 1fr); */
+            grid-template-columns: min-content repeat(3, 1fr);
+        }
+        
+        .first {
+            background-color: #f1c40f;
+        }
+        
+        .second {
+            background-color: #3498db;
+        }
+        
+        .third {
+            background-color: #2ecc71;
+        }
+        
+        .fourth {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum laboriosam fugit rerum eaque, atque exercitationem in et numquam odio adipisci mollitia vero dolore velit nisi sapiente molestiae minus corporis laborum.</div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+</body>
+
+</html>
