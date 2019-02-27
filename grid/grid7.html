@@ -16,7 +16,10 @@
             display: grid;
             grid-gap: 10px;
             grid-auto-rows: 100px;
-            grid-template-columns: repeat(5, 1fr);
+            /* 빈칸 자동 채우기 */
+            grid-auto-flow: row dense;
+            /* grid-template-columns: [first-line] 1fr [second-line] 1fr [third-line] 1fr [fourth-line] 1fr [fifth-line] 1fr [sixth-line] 1fr; */
+            grid-template-columns: [first-line] repeat(5, 1fr) [last-line];
         }
         
         .box {
@@ -36,8 +39,8 @@
         }
         
         .box:first-child {
-            grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-start: 2;
+            grid-column-end: last-line;
         }
         /* .box:nth-child(10) {
             grid-column-start: 2;
